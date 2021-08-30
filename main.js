@@ -84,7 +84,6 @@ function out(data)
 
 function gotCategory()
 {
-
         $.ajax({
             method: "POST",
             url: "shop.php",
