@@ -30,7 +30,6 @@ class dbModel {
                 $stm->execute();
                 foreach ($stm->fetchAll() as $key => $value) {
                     $categories [$value['id_cat']][$value[1]] += isset($value['id_cat']);
-
                 }
                 return json_encode($categories);
             }
